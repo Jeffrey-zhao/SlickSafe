@@ -129,9 +129,9 @@ namespace SlickOne.Data
                     return dataList;
                 }
             }
-            catch
+            catch(Exception ex)
             {
-                throw;
+                throw ex;
             }
         }
 

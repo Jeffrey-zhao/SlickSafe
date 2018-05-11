@@ -89,7 +89,7 @@ var accountmgr = (function () {
             "EMail": email
         };
 
-        ajaxPost(lsm.getApiUrl('Account/Register'),
+        jshelper.ajaxPost(lsm.getApiUrl('Account/Register'),
             JSON.stringify(userData),
             function (result) {
                 if (result.status == 1) {
@@ -120,7 +120,7 @@ var accountmgr = (function () {
             return false;
         }
 
-        ajaxPost("/Account/SendEMail",
+        jshelper.ajaxPost("/Account/SendEMail",
             JSON.stringify({ "EMail": email }),
             function (result) {
                 if (result.status == 1) {
@@ -167,7 +167,7 @@ var accountmgr = (function () {
             "NewPassword": newPasswordConfirmed
         };
 
-        ajaxPost("/Account/Password",
+        jshelper.ajaxPost("/Account/Password",
             JSON.stringify(userData),
             function (result) {
                 if (result.ID) {

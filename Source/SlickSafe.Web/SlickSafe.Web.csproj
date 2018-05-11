@@ -18,7 +18,7 @@
     <AssemblyName>SlickSafe.Web</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
-    <UseIISExpress>false</UseIISExpress>
+    <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -486,7 +486,9 @@
     <Content Include="ViewJS\userlist.js" />
     <Content Include="ViewJS\userlistdialog.js" />
     <Content Include="ViewJS\userpermissionlist.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -578,7 +580,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>17364</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost/ssweb</IISUrl>
+          <IISUrl>http://localhost:33333/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
